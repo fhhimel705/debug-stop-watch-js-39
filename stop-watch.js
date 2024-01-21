@@ -5,7 +5,7 @@ const time = document.getElementById("time");
 const setTime = () => {
   inter = setInterval(() => {
     time.innerText = num++;
-  }, 1000);
+  }, 100);
   return inter;
 };
 document.getElementById("start-btn").addEventListener("click", function () {
