@@ -8,12 +8,10 @@ const setTime = () => {
   return inter;
 };
 document.getElementById("start-btn").addEventListener("click", function () {
-    const startTime = setTime();
+    setTime();
 });
 
+document.getElementById("stop-btn").addEventListener("click", function () {
+    clearInterval(inter);
+});
 
-// const stopTime = () => {
-// const stopTime = setTime();
-//   clearInterval(setTime());
-
-// };
